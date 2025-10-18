@@ -5,9 +5,11 @@
 
     const sectionProfile = document.getElementById("section-profile");
     const sectionConnect = document.querySelector("#section-connect");
+    const sectionDashboard = document.querySelector("#section-dashboard");
 
     const profileClose = document.getElementById("profile-close");
     const connectClose = document.getElementById("connect-close");
+    const dashboardClose = document.getElementById("dashboard-close");
 
     function popUp() {
         sectionProfile.style.display = "block";
@@ -19,6 +21,11 @@
     }
     analysisBtn.addEventListener("click", popUp1);
 
+    function popUp2() {
+        sectionDashboard.style.display = "block";
+    }
+    productsBtn.addEventListener("click", popUp2);
+
     function hideContainer() {
         sectionProfile.style.display = "none";
     }
@@ -28,6 +35,14 @@
         sectionConnect.style.display = "none";
     }
     connectClose.addEventListener("click", hideContainer1);
+
+    function hideContainer2() {
+        sectionDashboard.style.display = "none";
+    }
+    dashboardClose.addEventListener("click", hideContainer2);
+    
+
+
 
 
 
