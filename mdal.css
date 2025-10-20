@@ -646,7 +646,8 @@ li {
     bottom: 0;
     height: 70vh;
     overflow: auto;
-    /* animation: slideUp 0.5s ease-out forwards; */
+    animation: slideUp 0.5s ease-out forwards;
+    display: none;
 }
 
 .section-dashboard-body {
